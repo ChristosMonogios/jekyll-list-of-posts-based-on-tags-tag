@@ -10,12 +10,12 @@ You define the number of posts to be shown.
  
 ## How to use the tag
 
- Add the tag in your templates like this: {% getPosts N %} where N is the number of the relevant posts you want to show.
+ Add the tag in your templates like this: {% relevant_posts_list N %} where N is the number of the relevant posts you want to show.
  
  Example:
  
  ```
- {% getPosts 5 %}
+ {% relevant_posts_list 5 %}
  ```
 
 ## Author
