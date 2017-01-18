@@ -22,9 +22,10 @@ module Jekyll
 
             for post in posts
                 time = post.data["date"].to_datetime.strftime("%d %b %Y")
+                timeForUrl = post.data["date"].to_datetime.strftime("%Y/%m/%d/")
                 html += "<li>"\
                             "<h4>"\
-                                "<a href=\"#{baseUrl}#{post.data['slug']}\">"\
+                                "<a href=\"#{baseUrl}#{timeForUrl}#{post.data['slug']}\">"\
                                     "#{post.data['title']}"\
                                     "<small><time datetime=\"#{time}\"> #{time}</time></small>"\
                                 "</a>"\
